@@ -16,11 +16,88 @@ body {
   min-height: 100vh;
 }
 
-.about {
-  /* text-align: дуа; */
+/* .about {
   margin: 5px 5%;
   width: 50%;
+  color: rgb(221, 218, 218) 0;
+} */
+/* Заголовки для новостей и заказов */
+.about {
+  font-size: 2em; /* Увеличиваем размер текста */
+  font-weight: bold; /* Делаем текст жирным */
+  color: #333; /* Тёмно-серый цвет текста */
+  text-align: center; /* Центрируем текст */
+  margin: 20px 0; /* Отступы сверху и снизу */
+  position: relative; /* Для добавления декоративного элемента */
 }
+
+.about::after {
+  content: ""; /* Добавляем декоративный элемент */
+  display: block;
+  width: 50px; /* Ширина линии */
+  height: 3px; /* Высота линии */
+  background-color: #c5a6ae; /* Цвет линии */
+  margin: 10px auto 0; /* Отступы */
+}
+
+/* Стили для кнопок */
+button {
+  padding: 10px 40px;
+  border-radius: 50px; /* Закругляем края кнопки */
+  background-color: #c5a6ae;
+  border: none; /* Убираем границу */
+  color: white; /* Цвет текста */
+  font-size: 1.2em; /* Увеличиваем размер текста */
+  transition: background-color 0.3s ease; /* Плавный переход цвета */
+}
+
+button:hover {
+  background-color: #a57a8a; /* Темнее цвет при наведении */
+  animation: pulse_button 1s ease-in-out; /* Анимация при наведении */
+}
+
+/* Анимация пульсации */
+@keyframes pulse_button {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Дополнительные стили для текста */
+p.about {
+  font-size: 1.2em; /* Увеличиваем размер текста */
+  line-height: 1.5; /* Межстрочное расстояние */
+  color: #555; /* Цвет текста */
+  text-align: center; /* Выравниваем текст по ширине */
+  margin: 0 10%; /* Отступы по бокам */
+}
+
+/* Декоративные элементы для основного текста */
+.main h2.about::before,
+.main h2.about::after {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 3px;
+  background-color: #c5a6ae;
+  margin: 0 10px;
+  vertical-align: middle;
+}
+
+.main h2.about::before {
+  margin-left: 0;
+}
+
+.main h2.about::after {
+  margin-right: 0;
+}
+
 button {
   padding: 10px 40px;
   border-radius: 7%;
@@ -268,39 +345,46 @@ select {
 
 /* footer */
 .footer {
-  background: linear-gradient(90deg, #5e5c5c, #acabab);
+  background: -webkit-linear-gradient(90deg, #c7c7c7, #c1bdbd);
+  background: linear-gradient(90deg, #c7c7c7, #c1bdbd);
   color: #fff;
-  padding: 10px 0;
+  padding: 20px;
   display: flex;
-  align-items: center;
   justify-content: space-around;
+  align-items: center;
   flex-wrap: wrap;
 }
 
-.findus,
-.contact-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.contact p {
+  padding: 5px;
+}
+.findus img {
+  width: 30px;
+  margin: 0 10px 0 0;
+  transition: transform 0.3s;
 }
 
-.findus p,
-.contact-info p {
-  margin: 5px 0;
-  color: #ccc;
+.findus img:hover {
+  transform: scale(1.2);
 }
 
-.findus img,
-.contact-info img {
-  padding-left: 20px;
-  height: 30px;
+.contact-info a {
+  color: #7e9bc7;
 }
 
-.divider {
-  height: 80%;
-  width: 2px;
-  background-color: #999;
-  margin: 0 20px;
+.map-container iframe {
+  border: 2px solid #959ebb;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-section {
+    margin: 20px 0;
+  }
 }
 
 .map-container {
