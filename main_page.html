@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main_page.css" />
+    <title>ProSport</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <a href="#" class="logo">ProSport</a>
+        <div class="clock"></div>
+        <div class="date"></div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#">Каталог</a></li>
+            <li>
+              <a href="#">Меню &bigtriangledown;</a>
+              <ul>
+                <li><a href="#">Админ-панель</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+        </nav>
+      </div>
+      <div class="main">
+        <h2 class="about">Новости</h2>
+        <p class="about">
+          Узнавайте о последних новинках и событиях в мире спорта первыми! Мы
+          постоянно обновляем наш ассортимент, чтобы предложить вам только
+          лучшие товары по выгодным ценам. Следите за нашими новостями, чтобы
+          быть в курсе всех актуальных предложений и акций!
+        </p>
+
+        <div class="product-grid">
+          <div class="product-card">
+            <img src="img/main/ski_news.jpg" alt="Product 1" />
+            <h2>Новые лыжи</h2>
+            <p>В нашем ассортименте появились новые лыжи</p>
+            <span>15.000</span>
+          </div>
+          <div class="product-card">
+            <img src="img/main/ski2.jpg" alt="Product 2" />
+            <h2>Новые коньки</h2>
+            <p>В нашем ассортименте появились новые коньки</p>
+            <span>35.000</span>
+          </div>
+          <div class="product-card">
+            <img src="img/main/news3.jpg" alt="Product 2" />
+            <h2>Новые лыжи</h2>
+            <p>В нашем ассортименте появились новые лыжи</p>
+            <span>15.000</span>
+          </div>
+          <div class="product-card">
+            <img src="img/main/news4.jpeg" alt="Product 2" />
+            <h2>Новые лыжи</h2>
+            <p>В нашем ассортименте появились новые лыжи</p>
+            <span>15.000</span>
+          </div>
+        </div>
+        <h2 class="about">Закажите товар уже сейчас</h2>
+        <p class="about">
+          Сделайте свой заказ прямо сейчас и получите качественные товары по
+          выгодным ценам! Мы гарантируем быструю доставку и отличное
+          обслуживание. Не упустите шанс обновить свой спортивный инвентарь и
+          наслаждаться активным образом жизни!
+        </p>
+
+        <div class="form_container">
+          <img src="img/main/girl.png" alt="" />
+          <form action="#" class="forms">
+            <h2>Форма заказа</h2>
+            <input
+              type="text"
+              id="first-name"
+              placeholder="Имя"
+              required
+              class="input_box"
+            />
+            <input
+              type="text"
+              id="last-name"
+              placeholder="Фамилия"
+              required
+              class="input_box"
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              required
+              class="input_box"
+            />
+            <input type="text" placeholder="Город" required class="input_box" />
+            <input type="text" placeholder="Улица" required class="input_box" />
+            <input type="text" placeholder="Дом" required class="input_box" />
+            <input
+              type="text"
+              placeholder="Квартира"
+              required
+              class="input_box"
+            />
+            <p>
+              <select name="list1">
+                <option>Выберите способ доставки</option>
+                <option>Почта Росии</option>
+                <option>Курьер</option>
+                <option>Пункт выдачи</option>
+              </select>
+            </p>
+            <p>
+              <select name="list2" id="product-select">
+                <option>Выберите товар</option>
+                <option value="15000">Лыжи Fisher</option>
+                <option value="35000">Лыжи Salomon</option>
+                <option value="15000">Лыжи Tisa</option>
+                <option value="15000">Лыжи Кама</option>
+                <option value="25000">Коньки</option>
+              </select>
+            </p>
+            <p>
+              <input
+                type="number"
+                id="quantity"
+                placeholder="Количество"
+                required
+                class="input_box"
+              />
+            </p>
+            <p>
+              <input
+                type="text"
+                id="total-price"
+                placeholder="Итоговая стоимость"
+                readonly
+                class="input_box"
+              />
+            </p>
+            <button>Заказать</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="findus">
+          <p>Социальные сети</p>
+          <a href="#"><img src="img/main/vk.png" alt="vk" /></a>
+          <a href="#"><img src="img/main/mail.png" alt="mail" /></a>
+        </div>
+        <div class="divider"></div>
+        <div>
+          <p>8(995)456-8761</p>
+          <p>г.Пермь</p>
+          <p>ProSport@mail.ru</p>
+        </div>
+        <div class="divider"></div>
+        <div class="map-container">
+          <script
+            type="text/javascript"
+            charset="utf-8"
+            async
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab45b1ad193dd13fff5a27c3bb23ad9592ffdb445f6cc5a668c36359334cb3503&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=true"
+          ></script>
+        </div>
+      </div>
+    </div>
+    <script src="js/clock.js"></script>
+    <script src="js/burger.js"></script>
+  </body>
+</html>
